@@ -1,12 +1,12 @@
-#show-contact {
+#show-location {
   display: none;
 }
 
-.contact {
+span.location {
   cursor: pointer;
   color: #0088cc;
 }
 
-.contact:hover {
+span.location:hover {
   text-decoration: underline;
 }

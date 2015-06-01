@@ -5,64 +5,61 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Address book</title>
+    <title>Places</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Address book</h1>
-        <p class="lead">The most exciting address book ever; </p>
+        <h1>Destinations</h1>
+        <p class="lead">Oh wow.</p>
       </div>
       <div class="row">
         <div class="col-md-5">
-          <h2>Add a contact:</h2>
-          <form id="new-contact">
+          <h2>Add a place:</h2>
+          <form id="new-place">
 
             <div class="form-group">
-              <label for="new-first-name">First name</label>
-              <input type="text" class="form-control" id="new-first-name">
+              <label for="location-name">Destination Name:  </label>
+              <input type="text" class="form-control location-name" id="location-name">
             </div>
             <div class="form-group">
-              <label for="new-last-name">Last name</label>
-              <input type="text" class="form-control" id="new-last-name">
+              <label for="date-visited">Date Visited:  </label>
+              <input type="date" class="form-control date-visted" id="date-visited">
             </div>
 
-            <div id="new-addresses">
-              <div class="new-address">
+            <div id="landmarks">
+              <div class="landmarks">
                 <div class="form-group">
-                  <label for="new-street">Street</label>
-                  <input type="text" class="form-control new-street">
+                  <label for="landmark">Landmark Visited:  </label>
+                  <input type="text" class="form-control" id="landmark">
                 </div>
                 <div class="form-group">
-                  <label for="new-city">City</label>
-                  <input type="text" class="form-control new-city">
-                </div>
-                <div class="form-group">
-                  <label for="new-state">State</label>
-                  <input type="text" class="form-control new-state">
+                  <label for="notes">Notes:  </label>
+                  <input type="text" class="form-control notes" id="notes">
                 </div>
               </div>
             </div>
 
-            <span class="btn btn-primary" id="add-address">Another address</span>
+            <!-- <span class="btn btn-primary" id="add-location">Another address</span> -->
 
             <button type="submit" class="btn">Add</button>
           </form>
 
-          <h2>Contacts:</h2>
-          <ul id="contacts">
+          <h2>Places:</h2>
+          <ul id="places">
 
           </ul>
 
-          <div class="col-md-5 entry">
-            <div id="show-contact">
+          <div class="location col-md-5">
+            <div id="show-location">
               <h2></h2>
-              <p>First name:  <span class="first-name"></span></p>
-              <p>Last name:  <span class='last-name'></span></p>
-              <p>Address:</p>
-              <ul id="addresses">
+              <p>Location Name:  <span class="location-name"></span></p>
+              <p>Date Visted:  <span class='date-visted'></span></p>
+              <p>Landmark:  <span class='landmark'></span></p>
+              <p>Notes:  <span class="notes"></span></p>
 
-              </ul>
+
+
             </div>
           </div>
         </div>
